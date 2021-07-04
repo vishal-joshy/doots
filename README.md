@@ -33,3 +33,8 @@ https://addyosmani.com/resources/essentialjsdesignpatterns/book/
 
 https://github.com/typicode/json-server
 
+# Courses
+
+https://fullstackopen.com/en/
+
+https://www.theodinproject.com/dashboard
