@@ -38,3 +38,19 @@ https://github.com/typicode/json-server
 https://fullstackopen.com/en/
 
 https://www.theodinproject.com/dashboard
+
+# other files
+https://javascript.plainenglish.io/how-to-improve-your-websites-page-load-speed-7394bea11ac2
+
+Steels javascript datastructures.
+
+3.js . webGL AR and VR Boasting
+
+[https://www.digitalocean.com/community/tutorials
+
+https://fullstackopen.com/en/
+
+https://toolkit.addy.codes/
+
+30-60 rule . every 30 minutes you sit be active for 60 seconds
+
