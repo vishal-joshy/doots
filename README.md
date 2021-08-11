@@ -54,3 +54,6 @@ https://toolkit.addy.codes/
 
 30-60 rule . every 30 minutes you sit be active for 60 seconds
 
+# new Idea for an app 
+Stock market notification
+using stock market api notify the user of when a stock reaches a certain price
