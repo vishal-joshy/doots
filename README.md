@@ -39,6 +39,8 @@ https://fullstackopen.com/en/
 
 https://www.theodinproject.com/dashboard
 
+https://github.com/practical-tutorials/project-based-learning
+
 # other files
 https://javascript.plainenglish.io/how-to-improve-your-websites-page-load-speed-7394bea11ac2
 
