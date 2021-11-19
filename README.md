@@ -7,7 +7,7 @@ https://simonplend.com/how-to-fix-those-confusing-cors-errors-when-calling-your-
 
 Vscode Playground
 https://pawelcislo.com/2021/11/14/my-vs-code-playground/
-
+https://www.ivaylopavlov.com/setting-up-visual-studio-code-for-web-development/
 
 # VaisakhB workshops on react and node
 
