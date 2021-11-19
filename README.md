@@ -5,6 +5,8 @@ https://codinginflow.com/google-programming-questions
 Cors errors
 https://simonplend.com/how-to-fix-those-confusing-cors-errors-when-calling-your-express-api/
 
+Vscode Playground
+https://pawelcislo.com/2021/11/14/my-vs-code-playground/
 
 
 # VaisakhB workshops on react and node
