@@ -41,6 +41,8 @@ https://www.theodinproject.com/dashboard
 
 https://github.com/practical-tutorials/project-based-learning
 
+https://pawelcislo.com/2019/02/18/learn-programming-the-powerful-way-or-anything-else/#ftoc-heading-7
+
 # other files
 https://javascript.plainenglish.io/how-to-improve-your-websites-page-load-speed-7394bea11ac2
 
@@ -48,7 +50,7 @@ Steels javascript datastructures.
 
 3.js . webGL AR and VR Boasting
 
-[https://www.digitalocean.com/community/tutorials
+https://www.digitalocean.com/community/tutorials
 
 https://fullstackopen.com/en/
 
