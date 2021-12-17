@@ -1,0 +1,53 @@
+{
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+    "emmet.triggerExpansionOnTab": true,
+    "editor.mouseWheelZoom": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.linkedEditing": true,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.printWidth": 100,
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.lineHeight": 35,
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "IntelliJ-ish Darcula",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<space>"],
+        "commands": ["workbench.action.files.save"]
+      }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+      {
+        "before": ["p"],
+        "after": ["p", "g", "v", "y"]
+      }
+    ],
+    "vim.insertModeKeyBindings": [
+      {
+        "before":["j","k"],
+        "after":["<esc>"]
+      }]
+    ,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.hlsearch": true,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+  }
+  
