@@ -14,7 +14,6 @@
 
 ## comms
 
-- discord
 - telegram
 
 ## dev
@@ -23,15 +22,8 @@
 - git
 - node
 - github desktop
-- postman
 - wslg
-- postgress
-- mongo db
 - dbeaver
-
-## email
-
-- tutanota
 
 ## tor
 
@@ -43,7 +35,6 @@
 - nvcleaninstall
 - o&o shut up
 - mpv
-- nuclear
 - bleachbit
 - windirstat
 - stretchly
@@ -53,3 +44,14 @@
 - disconnect
 - privacy badger
 - cookie autodelete
+
+## pwa
+
+- protonmail
+- spotify web
+- discord
+- tutanota
+- reddit
+- github
+- evernote
+- postman
