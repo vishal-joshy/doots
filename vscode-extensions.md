@@ -1,12 +1,13 @@
-Prettier
-path Intellisense
-live server
-Eslint
-IntelliJ-ish Dracula theme
-ES7 React
 Auto Rename Tag
-Matirial Icon Theme
-Nextjs snippets
-Nord
-Remote-Wsl
-VIM
+ES7 React/Redux/Graphql
+Intellij-ish Dracula theme
+Maritial Icon theme
+Remote - Wsl
+Vim
+Code spell checker
+ESLint
+Git Lens
+Live Server
+PathIntellisense
+Prettier
+Tabnine
