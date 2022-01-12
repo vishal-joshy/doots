@@ -6,15 +6,23 @@
   "editor.linkedEditing": true,
   "editor.formatOnSave": true,
   "editor.lineHeight": 35,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "files.autoSave": "afterDelay",
-  "window.zoomLevel": 0.2,
+  "window.zoomLevel": 0,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "IntelliJ-ish Darcula",
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
     "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238"
+    "statusBar.debuggingBackground": "#263238",
+    // Gutter indicators (left)
+    "editorGutter.modifiedBackground": "#26a0a8b6",
+    "editorGutter.addedBackground": "#0fad3fec",
+    "editorGutter.deletedBackground": "#a52d2dce",
+    // Scrollbar indicators (right)
+    "editorOverviewRuler.addedForeground": "#26a0a8b6",
+    "editorOverviewRuler.modifiedForeground": "#0fad3fec",
+    "editorOverviewRuler.deletedForeground": "#a52d2dce"
   },
   "prettier.printWidth": 100,
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -40,5 +48,6 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Theodora's Scrimba",
 }
