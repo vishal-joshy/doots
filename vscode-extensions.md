@@ -10,4 +10,4 @@ Git Lens
 Live Server
 PathIntellisense
 Prettier
-Tabnine
+Theodora
