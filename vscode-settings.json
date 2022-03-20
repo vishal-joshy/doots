@@ -1,13 +1,11 @@
 {
-  "window.zoomLevel": 1,
   "editor.fontFamily": "JetBrains Mono, monospace",
   "editor.mouseWheelZoom": true,
-  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.letterSpacing": 0.5,
   "editor.lineHeight": 38,
-  "editor.suggestLineHeight": 32,
   "editor.tabSize": 2,
+  "editor.fontSize": 15,
   "editor.cursorBlinking": "smooth",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -24,7 +22,7 @@
   "workbench.tree.indent": 12,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Nord Deep",
   "zenMode.hideActivityBar": false,
   "zenMode.restore": false,
   "zenMode.hideTabs": false,
@@ -32,7 +30,6 @@
   "telemetry.telemetryLevel": "off",
   "editor.linkedEditing": true,
   "prettier.printWidth": 100,
-  
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<space>"],
@@ -55,20 +52,5 @@
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
-  "vim.hlsearch": true
-
-
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#1A1A1A",
-    "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238",
-    // Gutter indicators (left)
-    "editorGutter.modifiedBackground": "#26a0a8b6",
-    "editorGutter.addedBackground": "#0fad3fec",
-    "editorGutter.deletedBackground": "#a52d2dce",
-    // Scrollbar indicators (right)
-    "editorOverviewRuler.addedForeground": "#26a0a8b6",
-    "editorOverviewRuler.modifiedForeground": "#0fad3fec",
-    "editorOverviewRuler.deletedForeground": "#a52d2dce"
-  },
+  "vim.hlsearch": true,
 }
