@@ -11,22 +11,22 @@
     "initialPosition": "10,10",
     "initialRows": 43,
     "tabWidthMode": "equal",
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "antialiasingMode": "grayscale",
             "colorScheme": "Ubuntu [Dark]",
             "cursorShape": "filledBox",
-            "font": 
+            "font":
             {
                 "face": "Cascadia Code",
-                "size": 14,
+            "size": 14,
                 "weight": "normal"
             },
             "padding": "8, 8, 8, 8"
         },
-        "list": 
+        "list":
         [
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -54,7 +54,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#2E3436",
@@ -80,5 +80,5 @@
             "yellow": "#8A7000"
         },
     ],
-    
+
 }
