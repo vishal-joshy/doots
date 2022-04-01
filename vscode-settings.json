@@ -61,6 +61,4 @@
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
   "workbench.colorTheme": "Dracula",
-  "typescript.suggest.paths": false ,
-  "javascript.suggest.paths": false
 }
