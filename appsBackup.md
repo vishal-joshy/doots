@@ -37,13 +37,11 @@
 - mpv
 - bleachbit
 - windirstat
-- stretchly
 
 ## extensions
 
-- disconnect
+- forest
 - privacy badger
-- cookie autodelete
 
 ## pwa
 
