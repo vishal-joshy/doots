@@ -1,13 +1,16 @@
-Auto Rename Tag
-ES7 React/Redux/Graphql
-Intellij-ish Dracula theme
-Maritial Icon theme
-Remote - Wsl
-Vim
-Code spell checker
-ESLint
-Git Lens
-Live Server
-PathIntellisense
-Prettier
-Theodora
+# Local Extensions
+- Auto Close Tag
+- Auto Rename Tag
+- ES7+ React/Redux snippets
+- GlassIt-VSC
+- VIM
+- Remote - WSL
+- Code Spell Checker
+- ESLint
+- Prettier
+- Github Copilot
+- Intellicode?
+- GitLens
+- npm Intellisense
+- Path Intellisense
+- Live Server
