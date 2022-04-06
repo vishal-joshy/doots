@@ -4,14 +4,15 @@
 
 ## browser
 
-- brave
-- firefox
+- Brave
+- Firefox Developer Edition
 
 ## r&w
 
 - kindle
 - joplin
-
+- Evernote
+- Notepads
 ## comms
 
 - telegram
