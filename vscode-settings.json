@@ -60,5 +60,9 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
-  "workbench.colorTheme": "Dracula",
+  "editor.inlineSuggest.enabled": true,
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "workbench.colorTheme": "Everforest Dark",
+  "glassit.alpha": 235
 }
