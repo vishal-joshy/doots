@@ -12,7 +12,6 @@
   "editor.fontLigatures": true,
   // "editor.letterSpacing": 0.5,
   "editor.tabSize": 2,
-  //   "editor.fontSize": 15,
   "editor.cursorBlinking": "smooth",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -21,6 +20,14 @@
   "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggest.preview": true,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
   "files.autoSave": "afterDelay",
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -29,7 +36,8 @@
   "workbench.tree.indent": 12,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "material-icon-theme",
-  // "workbench.colorTheme": "Nord Deep",
+  "workbench.hover.delay": 100,
+  "workbench.tree.renderIndentGuides": "always",
   "zenMode.hideActivityBar": false,
   "zenMode.restore": false,
   "zenMode.hideTabs": false,
@@ -51,7 +59,7 @@
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
+      "before": ["j", "j"],
       "after": ["<esc>"]
     }
   ],
@@ -60,9 +68,16 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
-  "editor.inlineSuggest.enabled": true,
   "typescript.suggest.paths": false,
   "javascript.suggest.paths": false,
-  "workbench.colorTheme": "Everforest Dark",
-  "glassit.alpha": 235
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "javascript": true,
+    "typescriptreact": false
+  },
+  "diffEditor.renderSideBySide": false,
+  "workbench.colorTheme": "Mariana Pro (Cool)"
 }
