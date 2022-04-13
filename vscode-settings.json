@@ -45,6 +45,7 @@
   "telemetry.telemetryLevel": "off",
   "editor.linkedEditing": true,
   "prettier.printWidth": 120,
+	"prettier.useTabs": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<space>"],
@@ -76,7 +77,7 @@
     "plaintext": false,
     "markdown": false,
     "javascript": true,
-    "typescriptreact": false
+    "typescriptreact": true
   },
   "diffEditor.renderSideBySide": false,
   "workbench.colorTheme": "Mariana Pro (Cool)"
