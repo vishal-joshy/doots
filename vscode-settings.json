@@ -7,7 +7,7 @@
   "editor.wordWrap": "on",
   "editor.guides.bracketPairs": true,
   "workbench.editor.wrapTabs": true,
-  "editor.fontFamily": "FIra Code",
+  "editor.fontFamily": "Fira Code",
   "editor.mouseWheelZoom": true,
   "editor.fontLigatures": true,
   // "editor.letterSpacing": 0.5,
@@ -77,7 +77,7 @@
     "typescriptreact": true
   },
   "diffEditor.renderSideBySide": false,
-  "workbench.colorTheme": "Raijū",
+  "workbench.colorTheme": "Nord",
   "prettier.arrowParens": "avoid",
   "prettier.proseWrap": "always",
   "prettier.singleQuote": true,
@@ -85,10 +85,13 @@
   "editor.minimap.renderCharacters": false,
   "window.menuBarVisibility": "compact",
   "editor.scrollbar.verticalScrollbarSize": 5,
-  "editor.rulers": [80],
-  "editor.snippetSuggestions": "top",
+  "editor.rulers": [100],
+  "editor.snippetSuggestions": "inline",
   "editor.suggest.localityBonus": true,
   "workbench.panel.defaultLocation": "right",
   "zenMode.hideActivityBar": false,
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}"
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#272424"
+  },
 }
