@@ -1,48 +1,76 @@
 {
-  "editor.fontSize": 18,
-  "editor.lineHeight": 38,
-  "editor.dragAndDrop": false,
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true,
-  "editor.wordWrap": "on",
-  "editor.guides.bracketPairs": true,
-  "workbench.editor.wrapTabs": true,
+  // code settings
   "editor.fontFamily": "Fira Code",
-  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
-  // "editor.letterSpacing": 0.5,
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "off",
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "none",
+  "editor.lineHeight": 38,
+  "editor.lineNumbers": "on",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "explorer.sortOrder": "modified",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
+  // format
   "editor.tabSize": 2,
-  "editor.cursorBlinking": "smooth",
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnType": true,
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.suggest.preview": true,
-  "editor.suggest.shareSuggestSelections": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "on",
-    "strings": "on"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "editor.wordWrap": "on",
+  "workbench.editor.wrapTabs": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  // suggestion
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "javascript": true
+  },
+  "editor.acceptSuggestionOnEnter": "off",
+
+  // animations
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelZoom": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.renderCharacters": false,
+  "editor.guides.bracketPairs": true,
+
+  // format
+  "editor.bracketPairColorization.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
+  },
+  "editor.linkedEditing": true,
   "files.autoSave": "afterDelay",
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.enableExperiments": false,
-  "workbench.list.smoothScrolling": true,
-  "workbench.tree.indent": 12,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.hover.delay": 100,
-  "workbench.tree.renderIndentGuides": "always",
-  "zenMode.restore": false,
-  "zenMode.hideTabs": false,
-  "zenMode.hideLineNumbers": false,
+
+  "workbench.tree.renderIndentGuides": "onHover",
   "telemetry.telemetryLevel": "off",
-  "editor.linkedEditing": true,
+
+  "workbench.iconTheme": "material-icon-theme",
+  "diffEditor.renderSideBySide": false,
+
+  "editor.inlineSuggest.enabled": true,
+  "window.menuBarVisibility": "compact",
+  "editor.scrollbar.verticalScrollbarSize": 5,
+  "breadcrumbs": false,
+  // vim
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<space>"],
@@ -55,43 +83,17 @@
       "after": ["p", "g", "v", "y"]
     }
   ],
-  "vim.insertModeKeyBindings": [
+  "vim.visualModeKeyBindings": [
+    // In visual mode i goes to insert mode
     {
-      "before": ["j", "k"],
-      "after": ["<esc>"]
+      "before": ["i"],
+      "after": ["<Esc>", "i"]
     }
   ],
-  "vim.sneak": true,
+  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false,
-    "javascript": true,
-    "typescriptreact": true
-  },
-  "diffEditor.renderSideBySide": false,
-  "workbench.colorTheme": "Nord",
-  "prettier.arrowParens": "avoid",
-  "prettier.proseWrap": "always",
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
-  "editor.minimap.renderCharacters": false,
-  "window.menuBarVisibility": "compact",
-  "editor.scrollbar.verticalScrollbarSize": 5,
-  "editor.rulers": [100],
-  "editor.snippetSuggestions": "inline",
-  "editor.suggest.localityBonus": true,
-  "workbench.panel.defaultLocation": "right",
-  "zenMode.hideActivityBar": false,
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#272424"
-  },
+  "diffEditor.ignoreTrimWhitespace": false
 }
