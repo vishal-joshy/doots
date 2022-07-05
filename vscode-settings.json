@@ -3,9 +3,11 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 38,
-
+  "editor.lineHeight": 2,
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
   "editor.renderControlCharacters": true,
+
   "editor.renderWhitespace": "none",
 
   "typescript.suggest.paths": false,
@@ -13,30 +15,15 @@
 
   // layout
   "breadcrumbs.enabled": false,
-  "breadcrumbs.filePath": "off",
   "workbench.editor.highlightModifiedTabs": true,
-  "editor.minimap.enabled": false,
 
   // format
-  "editor.tabSize": 2,
   "editor.formatOnType": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.editor.wrapTabs": true,
   "prettier.arrowParens": "avoid",
   "prettier.proseWrap": "always",
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
 
-  // suggestion
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false,
-    "javascript": true
-  },
   "editor.acceptSuggestionOnEnter": "off",
 
   // animations
@@ -47,11 +34,7 @@
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": false,
 
-
   "editor.bracketPairColorization.enabled": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.semanticTokenColorCustomizations": {
     "enabled": true
   },
@@ -63,17 +46,11 @@
   "workbench.tree.renderIndentGuides": "onHover",
   "telemetry.telemetryLevel": "off",
 
-  "workbench.iconTheme": "material-icon-theme",
   "diffEditor.renderSideBySide": false,
   "window.menuBarVisibility": "compact",
+
   "editor.scrollbar.verticalScrollbarSize": 5,
   // vim
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<space>"],
-      "commands": ["workbench.action.files.save"]
-    }
-  ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["p"],
@@ -89,6 +66,7 @@
   ],
   "vim.easymotion": true,
   "vim.incsearch": true,
+  "vim.surround": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
@@ -104,4 +82,30 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "editor.codeLens": false,
   "editor.inlineSuggest.enabled": true,
+
+  "workbench.colorCustomizations": {
+    "statusBar.foreground": "#e0e0e0",
+    "statusBar.background": "#1A1A1A",
+    "statusBar.noFolderBackground": "#212121",
+    "statusBar.debuggingBackground": "#263238"
+  },
+
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+
+  "editor.minimap.renderCharacters": false,
+  "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "explorer.openEditors.visible": 0,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Regard",
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "zenMode.restore": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
