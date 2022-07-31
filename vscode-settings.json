@@ -50,6 +50,7 @@
 
     "diffEditor.renderSideBySide": false,
     "window.menuBarVisibility": "compact",
+    "window.commandCenter": true,
 
     "editor.scrollbar.verticalScrollbarSize": 5,
 
