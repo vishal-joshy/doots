@@ -1,111 +1,114 @@
 {
-  // font
-  "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 16,
-  "editor.fontLigatures": true,
-  "editor.lineHeight": 2,
-  "editor.detectIndentation": true,
-  "editor.insertSpaces": true,
-  "editor.renderControlCharacters": true,
+    // typo
+    "editor.fontFamily": "MonoLisa",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 2,
+    "editor.detectIndentation": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
 
-  "editor.renderWhitespace": "none",
+    //Layout
+    "breadcrumbs.enabled": false,
 
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
+    "workbench.editor.highlightModifiedTabs": true,
 
-  // layout
-  "breadcrumbs.enabled": false,
-  "workbench.editor.highlightModifiedTabs": true,
+    // prettier
+    "editor.formatOnType": true,
 
-  // format
-  "editor.formatOnType": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.proseWrap": "always",
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
+    // auto save
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
 
-  "editor.acceptSuggestionOnEnter": "off",
+    // autocomplete
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "on",
 
-  // animations
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true,
-  "editor.mouseWheelZoom": true,
-  "editor.cursorBlinking": "smooth",
-  "editor.guides.bracketPairs": true,
-  "editor.guides.indentation": false,
+    // animations
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.smoothScrolling": true,
 
-  "editor.bracketPairColorization.enabled": true,
-  "editor.semanticTokenColorCustomizations": {
-    "enabled": true
-  },
-  "editor.linkedEditing": true,
-  "files.autoSave": "afterDelay",
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.indentation": false,
+    "editor.mouseWheelZoom": true,
 
-  "workbench.tree.renderIndentGuides": "onHover",
-  "telemetry.telemetryLevel": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+      "enabled": true
+    },
+    "editor.linkedEditing": true,
 
-  "diffEditor.renderSideBySide": false,
-  "window.menuBarVisibility": "compact",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
 
-  "editor.scrollbar.verticalScrollbarSize": 5,
-  // vim
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["p"],
-      "after": ["p", "g", "v", "y"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    // In visual mode i goes to insert mode
-    {
-      "before": ["i"],
-      "after": ["<Esc>", "i"]
-    }
-  ],
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.surround": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": false,
-  "vim.hlsearch": true,
+    "workbench.tree.renderIndentGuides": "onHover",
+    "telemetry.telemetryLevel": "off",
 
-  "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "window.menuBarVisibility": "compact",
 
-  // startup
-  "workbench.editor.restoreViewState": false,
-  "files.restoreUndoStack": false,
-  "workbench.startupEditor": "none",
+    "editor.scrollbar.verticalScrollbarSize": 5,
 
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "editor.codeLens": false,
-  "editor.inlineSuggest.enabled": true,
+    // vim
+    "vim.leader": "<space>",
+    "vim.visualModeKeyBindingsNonRecursive": [
+      {
+        "before": ["p"],
+        "after": ["p", "g", "v", "y"]
+      }
+    ],
+    "vim.visualModeKeyBindings": [
+      // In visual mode i goes to insert mode
+      {
+        "before": ["i"],
+        "after": ["<Esc>", "i"]
+      }
+    ],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.surround": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.hlsearch": true,
 
-  "workbench.colorCustomizations": {
-    "statusBar.foreground": "#e0e0e0",
-    "statusBar.background": "#1A1A1A",
-    "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238"
-  },
+    "diffEditor.ignoreTrimWhitespace": false,
 
-  "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 120,
+    // startup
+    "workbench.editor.restoreViewState": false,
+    "files.restoreUndoStack": false,
+    "workbench.startupEditor": "none",
 
-  "editor.minimap.renderCharacters": false,
-  "editor.occurrencesHighlight": false,
-  "editor.overviewRulerBorder": false,
-  "editor.renderLineHighlight": "none",
-  "editor.scrollbar.horizontal": "hidden",
-  "explorer.openEditors.visible": 0,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Regard",
-  "zenMode.fullScreen": false,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "zenMode.restore": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // optional
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "editor.codeLens": false,
+    "editor.inlineSuggest.enabled": true,
+
+
+    "editor.occurrencesHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.scrollbar.horizontal": "hidden",
+    "explorer.openEditors.visible": 0,
+
+    // zen
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": false,
+
+
+    // theme
+    "workbench.colorCustomizations": {
+      "statusBar.foreground": "#e0e0e0",
+      "statusBar.background": "#1A1A1A",
+      "statusBar.noFolderBackground": "#212121",
+      "statusBar.debuggingBackground": "#263238"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Everforest Dark",
   }
-}
