@@ -1,77 +1,27 @@
 {
-    //typo
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 15,
     "editor.lineHeight": 1.8,
-    "editor.suggestFontSize": 14,
-    "editor.renderControlCharacters": true,
 
-    //Editor
-    "editor.inlineSuggest.enabled": true,
-    "editor.snippetSuggestions": "inline",
-    "editor.detectIndentation": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.bracketPairColorization.enabled": false,
-    "editor.linkedEditing": true,
-
-    // "editor.lineNumbers": "interval",
-    "editor.suggestSelection": "first",
-    "editor.accessibilitySupport": "off",
-    "editor.mouseWheelZoom": true,
-
-     // autocomplete
-     "editor.acceptSuggestionOnEnter": "off",
-     "editor.tabCompletion": "on",
-
-      // auto save
+    //autocomplete
+    "editor.acceptSuggestionOnEnter": "off",
+    
+    // auto save
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000,
+    "files.autoSaveDelay": 3000,
 
-     // vim
-     "vim.leader": "<space>",
-     "vim.visualModeKeyBindingsNonRecursive": [
-       {
-         "before": ["p"],
-         "after": ["p", "g", "v", "y"]
-       }
-     ],
-     "vim.visualModeKeyBindings": [
-       // In visual mode i goes to insert mode
-       {
-         "before": ["i"],
-         "after": ["<Esc>", "i"]
-       }
-     ],
-     "vim.easymotion": true,
-     "vim.incsearch": true,
-     "vim.surround": true,
-     "vim.useSystemClipboard": true,
-     "vim.useCtrlKeys": false,
-     "vim.hlsearch": true,
- 
-     "diffEditor.ignoreTrimWhitespace": false,
- 
-     // startup
-     "workbench.editor.restoreViewState": false,
-     "files.restoreUndoStack": false,
-     "workbench.startupEditor": "none",
- 
-     // optional
-     "gitlens.codeLens.authors.enabled": false,
-     "gitlens.codeLens.recentChange.enabled": false,
-     "editor.codeLens": false,
-     
-    //Visuals
-    // Visuals-animations
-    "breadcrumbs.enabled": false,
+    // startup 
+    "workbench.editor.restoreViewState": false,
+    "files.restoreUndoStack": false,
+    "workbench.startupEditor": "none",
+
+    // gitlens
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "editor.codeLens": false,
+
+    // Visual
     "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
-
-    //Visuals-Layout
-    "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "compact",
-    "editor.minimap.renderCharacters": false,
-    "workbench.iconTheme": "file-icons-colourless",
-    "workbench.colorTheme": "Darcula",
+    "editor.minimap.renderCharacters": false
 }
