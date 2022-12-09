@@ -1,42 +1,42 @@
 {
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 15,
-    "editor.lineHeight": 2.2,
-    "editor.letterSpacing": 0,
-    "editor.mouseWheelZoom": true,
+  // typo
+  "editor.fontFamily": "Comic Mono",
+  "editor.fontSize": 17,
+  "editor.letterSpacing": 0.2,
 
-    //autocomplete
-    "editor.acceptSuggestionOnEnter": "off",
-    
-    // auto save
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 3000,
+  // line
+  "editor.lineHeight": 2,
+  "editor.lineNumbers": "relative",
 
-    // startup 
-    "workbench.editor.restoreViewState": false,
-    "files.restoreUndoStack": false,
-    "workbench.startupEditor": "none",
+  // auto save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
 
-    // gitlens
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
-    "editor.codeLens": false,
+  // startup
 
-    // Visual
-    "editor.smoothScrolling": true,
-    "workbench.list.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.minimap.renderCharacters": false,
-    "window.menuBarVisibility": "compact",
-    "window.titleBarStyle": "custom",
+  "workbench.editor.restoreViewState": false,
+  "files.restoreUndoStack": false,
+  "workbench.startupEditor": "none",
 
-    "workbench.iconTheme": "material-icon-theme",
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.colorTheme": "ReUI II"
+  // visual
+  "window.titleBarStyle": "custom",
+  "window.title": "${dirty}${rootName}",
+  "window.menuBarVisibility": "compact",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.minimap.renderCharacters": false,
+  "breadcrumbs.enabled": false,
+
+  // telemetry
+  "telemetry.telemetryLevel": "off",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.enableExperiments": false,
+
+  // git
+
+  // theme
+  "workbench.productIconTheme": "fluent-icons",
 
 }
