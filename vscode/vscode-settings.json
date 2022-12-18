@@ -1,0 +1,72 @@
+{
+  //telemetry
+  "telemetry.telemetryLevel": "off",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.enableExperiments": false,
+
+  // startup
+  "workbench.editor.restoreViewState": false,
+  "files.restoreUndoStack": false,
+  "workbench.startupEditor": "none",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/vishal/.config/nvim/init.lua",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  // auto save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "editor.formatOnSave": true,
+
+  // visual
+  "editor.showFoldingControls": "always",
+  "window.menuBarVisibility": "compact",
+  "window.titleBarStyle": "custom",
+  "window.title": "${dirty}${rootName}",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "phase",
+  "editor.smoothScrolling": true,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+
+  //useful
+  "editor.linkedEditing": true,
+
+  // git
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "editor.codeLens": false,
+
+  // typo
+  "editor.fontFamily": "Input Mono Condensed",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
+  "editor.lineNumbers": "relative",
+
+  // suggestions
+  "javascript.suggest.names": false,
+  "editor.wordBasedSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  //  formatter
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // theme
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "Everforest Dark",
+  "everforest.darkContrast": "hard",
+  "everforest.darkWorkbench": "flat",
+  "everforest.italicKeywords": false,
+}
+
