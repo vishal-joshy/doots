@@ -1,3 +1,5 @@
+require("nvim-autopairs").setup()
+
 local lspkind = require("lspkind")
 local cmp = require("cmp")
 local ls = require("luasnip")

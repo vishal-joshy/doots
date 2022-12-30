@@ -2,44 +2,40 @@
   vim.opt.number = true
   vim.opt.relativenumber = true
 
-  -- tabs & indentation
-  vim.opt.tabstop = 2
-  vim.opt.shiftwidth = 2
-  vim.opt.expandtab = true
-  vim.opt.autoindent = true
-
-  -- line wrapping
-  vim.opt.wrap = true
-  vim.opt.breakindent = true
+  -- mouse
+  vim.opt.mouse= 'a'
 
   -- search settings
   vim.opt.ignorecase = true
   vim.opt.smartcase = true
   vim.opt.hlsearch = false
 
-  -- spellcheck
-  vim.opt.spell = false
+  -- tabs & indentation
+  vim.opt.tabstop = 2
+  vim.opt.shiftwidth = 2
+  vim.opt.expandtab = true
+  vim.opt.autoindent = true
+  vim.opt.breakindent = true
+  vim.opt.wrap = true
 
   -- cursor line
   vim.opt.cursorline = true
 
   -- appearance
-  vim.opt.termguicolors = false
+  vim.opt.termguicolors = true
 
-  -- backspace 
-  vim.opt.backspace = "indent,eol,start"
+  -- completion
+  vim.opt.completeopt = 'menuone,noselect'
+
+  -- Decrease update time
+  vim.o.updatetime = 250
+  vim.wo.signcolumn = 'yes'
+
+  -- Save undo history
+  vim.o.undofile = true
 
   -- use system clipboard
   vim.opt.clipboard:append("unnamedplus")
-
-  -- include "-" as keyword
-  vim.opt.iskeyword:append("-")
-
-  -- mouse
-  vim.opt.mouse= 'a'
-
-  -- handled by lualine 
-  vim.opt.showmode = false
 
   vim.opt.showmatch = true
   vim.opt.wildmenu = true
@@ -48,6 +44,6 @@
   vim.opt.completeopt = { "menu", "menuone", "noselect" } 
   vim.opt.list = false
   vim.opt.listchars = { trail = "␠" } -- indent guide lines
-  -- vim.opt.listchars = { tab = " ", space = "·", eol = "", trail = "␠" } 
+   vim.opt.listchars = { tab = " ", space = "·", eol = "", trail = "␠" } 
 
 

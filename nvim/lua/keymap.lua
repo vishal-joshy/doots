@@ -9,4 +9,4 @@ end
 
 local nmap = bind("n", { noremap = false, silent = true })
 
-nmap("<C-p>", ":Telescope find_files<CR>")
+nmap("<C-p>", ":Telescope find_files<CR>") 

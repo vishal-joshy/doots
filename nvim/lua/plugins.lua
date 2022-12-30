@@ -1,68 +1,82 @@
-local status, packer = pcall(require, "packer")
-
-
-if (not status) then
-  print("Packer is not installed")
-  return
-end
-
-vim.cmd [[packadd packer.nvim]]
-
-packer.startup(function(use)
+return require("packer").startup(function(use)
+  -- Package Manager 
   use {'wbthomason/packer.nvim'}
 
-  use {'nvim-lualine/lualine.nvim'} -- Statusline
-  require('lualine').setup({
-    options={
-      theme='everforest',
-      icons_enabled = false,
-      component_seperators = '|',
-      section_seperators = '',
-    },
-  })
-  use "lukas-reineke/indent-blankline.nvim"
-  use {'L3MON4D3/LuaSnip'}
-  use {'ThePrimeagen/harpoon'}
-	use("nvim-lua/plenary.nvim")
-	use("nvim-telescope/telescope-fzf-native.nvim", { run = "make" })
-	use("nvim-telescope/telescope.nvim")
-	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-	use("nvim-treesitter/nvim-treesitter-textobjects")
-	use("nvim-treesitter/playground")
-	use("onsails/lspkind-nvim")
-	use("saadparwaiz1/cmp_luasnip")
-	use("sbdchd/neoformat")
+  -- LSP
+  use {'neovim/nvim-lspconfig',
+  requires = {
+    -- Automatically install LSP to stdpath for nvim
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    -- Useful status updates for LSP
+    'j-hui/fidget.nvim'
+  }
+}
 
-
-
-  use 'onsails/lspkind-nvim' --pictograms in suggestion
-  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-	use("hrsh7th/cmp-path")
-  use 'hrsh7th/nvim-cmp' -- Completion
-  use 'neovim/nvim-lspconfig' -- LSP
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+-- Auto Complete
+use {'hrsh7th/nvim-cmp',
+requires = {
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+  'hrsh7th/cmp-cmdline',
+  'hrsh7th/nvim-cmp',
+}
   }
 
-  use { "williamboman/mason.nvim" }
-  use 'windwp/nvim-autopairs'
-  use 'windwp/nvim-ts-autotag'
-
-  use {'sainnhe/everforest'}
-  vim.cmd('colorscheme everforest')
-
-  use({ "kyazdani42/nvim-tree.lua", requires = { "kyazdani42/nvim-web-devicons" } })
-  use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
-
-  -- LSP
-  use("neovim/nvim-lspconfig")
-  use({ "glepnir/lspsaga.nvim", branch = "main" })
   -- Snippets
-  use("rafamadriz/friendly-snippets")
-  use("numToStr/Comment.nvim")
+  use {'L3MON4D3/LuaSnip',
+  afer = 'nvim-cmp',
+  require = { 
+    'saadparwaiz1/cmp_luasnip',
+    'rafamadriz/friendly-snippets',
+  }
+}
 
-  --git
-  use("lewis6991/gitsigns.nvim")
+-- Treesitter
+use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+use {'nvim-treesitter/nvim-treesitter-textobjects',
+after = 'nvim-treesitter',
+  }
+
+  -- Format
+  use 'numToStr/Comment.nvim'
+  use 'sbdchd/neoformat'
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag' 
+  use 'tpope/vim-sleuth'
+  use "lukas-reineke/indent-blankline.nvim"
+
+
+  --  Finder (files, lsp, etc)
+  use {'nvim-telescope/telescope.nvim', 
+  branch = '0.1.x',
+  requires = { 'nvim-lua/plenary.nvim' }
+}
+use 'nvim-telescope/telescope-file-browser.nvim'
+use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
+
+--git
+use 'lewis6991/gitsigns.nvim'
+use 'tpope/vim-fugitive'
+use 'tpope/vim-rhubarb'
+
+-- Appearance
+use 'nvim-tree/nvim-tree.lua'
+use 'sainnhe/everforest'
+use 'catppuccin/nvim'
+use 'nvim-tree/nvim-web-devicons'
+use 'nvim-lualine/lualine.nvim' 
+use 'onsails/lspkind-nvim' --pictograms in suggestion
+use 'doums/darcula'
+
+-- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
+local has_plugins, plugins = pcall(require, 'custom.plugins')
+if has_plugins then
+  plugins(use)
+end
+
+if is_bootstrap then
+  require('packer').sync()
+end
 end)

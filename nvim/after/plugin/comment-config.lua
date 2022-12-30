@@ -1,4 +1,4 @@
-require("Comment").setup({
+require('Comment').setup({
 	toggler = {
 		line = "gc",
 		block = "<Leader>gb",
@@ -6,5 +6,6 @@ require("Comment").setup({
 	opleader = {
 		line = "gc",
 		block = "<Leader>gb",
-	},
+	}
 })
+
