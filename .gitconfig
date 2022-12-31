@@ -1,9 +1,11 @@
 [user]
-	name = vishal-joshy
+	name = vishaljoshy18
 	email = 1812-vishal@protonmail.com
 [init]
 	defaultBranch = main
 [color]
 	ui = auto
-[pull]
-	rebase = false
+[core]
+	excludesfile = /Users/vishal/.gitignore_global
+[format]
+	pretty = oneline
