@@ -41,7 +41,7 @@
   // typo
   "editor.fontFamily": "Input Mono Condensed",
   "editor.fontSize": 16,
-  "editor.lineHeight": 1.8,
+  "editor.lineHeight": 30,
   "editor.lineNumbers": "relative",
 
   // suggestions
