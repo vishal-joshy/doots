@@ -3,7 +3,6 @@
   "telemetry.telemetryLevel": "off",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.enableExperiments": false,
-
   // startup
   "workbench.editor.restoreViewState": false,
   "files.restoreUndoStack": false,
@@ -13,12 +12,10 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-
   // auto save
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 2000,
   "editor.formatOnSave": true,
-
   // visual
   "editor.showFoldingControls": "always",
   "window.menuBarVisibility": "compact",
@@ -29,28 +26,21 @@
   "editor.smoothScrolling": true,
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
-
   //useful
   "editor.linkedEditing": true,
-
   // git
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "editor.codeLens": false,
-
   // typo
-  "editor.fontFamily": "Input Mono Condensed",
-  "editor.fontSize": 16,
-  "editor.lineHeight": 30,
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 1.8,
   "editor.lineNumbers": "relative",
-
   // suggestions
   "javascript.suggest.names": false,
   "editor.wordBasedSuggestions": false,
   "editor.suggestSelection": "first",
   "editor.snippetSuggestions": "bottom",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-
   //  formatter
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -61,12 +51,20 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // theme
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Monokai",
   "everforest.darkContrast": "hard",
   "everforest.darkWorkbench": "flat",
   "everforest.italicKeywords": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "zenMode.restore": false,
+  "zenMode.silentNotifications": false,
+  "workbench.activityBar.visible": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
-

@@ -1,14 +1,10 @@
 require('lualine').setup {
 	options = {
 		icons_enabled = false,
-		theme = 'everforest',
+		theme = 'catppuccin',
 		comment_seperators = '|',
 		section_seperators = '',
 	}
 }
 
-require('fidget').setup()
-
-
-vim.cmd('colorscheme everforest')
-
+vim.cmd('colorscheme catppuccin-frappe')

@@ -1,6 +1,6 @@
   -- line number
-  vim.opt.number = true
-  vim.opt.relativenumber = true
+  vim.wo.number = true
+  vim.wo.relativenumber = true
 
   -- mouse
   vim.opt.mouse= 'a'
@@ -41,9 +41,10 @@
   vim.opt.wildmenu = true
   vim.opt.wildmode = { "longest:full", "full" } -- on first tab open wildmenu, on next move through the menu
 
-  vim.opt.completeopt = { "menu", "menuone", "noselect" } 
   vim.opt.list = false
   vim.opt.listchars = { trail = "␠" } -- indent guide lines
-   vim.opt.listchars = { tab = " ", space = "·", eol = "", trail = "␠" } 
+  vim.opt.listchars = { tab = " ", space = "·", eol = "", trail = "␠" } 
 
-
+	-- nvim tree
+	vim.g.loaded_netrw = 1
+	vim.g.loaded_netrwPlugin = 1

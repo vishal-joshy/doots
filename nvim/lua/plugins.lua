@@ -1,43 +1,55 @@
-return require("packer").startup(function(use)
-  -- Package Manager 
-  use {'wbthomason/packer.nvim'}
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
 
+local packer_bootstrap = ensure_packer()
+
+require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim'
   -- LSP
   use {'neovim/nvim-lspconfig',
-  requires = {
-    -- Automatically install LSP to stdpath for nvim
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    -- Useful status updates for LSP
-    'j-hui/fidget.nvim'
+    requires = {
+      -- Automatically install LSP to stdpath for nvim
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim',
+      -- Useful status updates for LSP
+      'j-hui/fidget.nvim'
+    }
   }
-}
 
--- Auto Complete
-use {'hrsh7th/nvim-cmp',
-requires = {
-  'hrsh7th/cmp-nvim-lsp',
-  'hrsh7th/cmp-buffer',
-  'hrsh7th/cmp-path',
-  'hrsh7th/cmp-cmdline',
-  'hrsh7th/nvim-cmp',
-}
+  -- Auto Complete
+  use {'hrsh7th/nvim-cmp',
+    requires = {
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'hrsh7th/cmp-cmdline',
+      'hrsh7th/nvim-cmp',
+    }
   }
 
   -- Snippets
   use {'L3MON4D3/LuaSnip',
-  afer = 'nvim-cmp',
-  require = { 
-    'saadparwaiz1/cmp_luasnip',
-    'rafamadriz/friendly-snippets',
+    afer = 'nvim-cmp',
+    require = { 
+      'saadparwaiz1/cmp_luasnip',
+      'rafamadriz/friendly-snippets',
+    }
   }
-}
 
--- Treesitter
-use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-use {'nvim-treesitter/nvim-treesitter-textobjects',
-after = 'nvim-treesitter',
+  -- Treesitter
+  use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+  use {'nvim-treesitter/nvim-treesitter-textobjects',
+    after = 'nvim-treesitter',
   }
+  use 'MaxMEllon/vim-jsx-pretty'
 
   -- Format
   use 'numToStr/Comment.nvim'
@@ -50,33 +62,39 @@ after = 'nvim-treesitter',
 
   --  Finder (files, lsp, etc)
   use {'nvim-telescope/telescope.nvim', 
-  branch = '0.1.x',
-  requires = { 'nvim-lua/plenary.nvim' }
-}
-use 'nvim-telescope/telescope-file-browser.nvim'
-use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
+    branch = '0.1.x',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
+  use 'nvim-telescope/telescope-file-browser.nvim'
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
---git
-use 'lewis6991/gitsigns.nvim'
-use 'tpope/vim-fugitive'
-use 'tpope/vim-rhubarb'
+  --git
+  use 'lewis6991/gitsigns.nvim'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
 
--- Appearance
-use 'nvim-tree/nvim-tree.lua'
-use 'sainnhe/everforest'
-use 'catppuccin/nvim'
-use 'nvim-tree/nvim-web-devicons'
-use 'nvim-lualine/lualine.nvim' 
-use 'onsails/lspkind-nvim' --pictograms in suggestion
-use 'doums/darcula'
+  -- Appearance
+  use 'nvim-tree/nvim-tree.lua'
+  use 'sainnhe/everforest'
+  use 'catppuccin/nvim'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'nvim-lualine/lualine.nvim' 
+  use 'onsails/lspkind-nvim' --pictograms in suggestion
 
--- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
-local has_plugins, plugins = pcall(require, 'custom.plugins')
-if has_plugins then
-  plugins(use)
-end
-
-if is_bootstrap then
-  require('packer').sync()
-end
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
+
+require('config/common')
+require('config/lsp-config')
+require('config/theme-config')
+require('config/completion-config')
+require('config/format-config')
+require('config/luasnip-config')
+require('config/treesitter-config')
+require('config/telecope-config')
+
+
