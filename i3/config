@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
- font pango:SF Pro 10
+ font pango:Operator Mono Book 10
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -46,7 +46,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+# tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec kitty
@@ -204,14 +204,14 @@ bindsym Print exec "flameshot gui"
 #Hide titlebar
  new_window 1pixel
 
-gaps inner 10
-gaps outer 2
+gaps inner 6
+gaps outer 6
 smart_borders no_gaps
-smart_gaps on
+# smart_gaps on
 
 # Startup
 #Background
-exec_always --no-startup-id feh --no-fehbg --bg-fill /home/vishal/Pictures/wallpapers/wick.jpg
+exec_always --no-startup-id feh --no-fehbg --bg-fill /home/vishal/Pictures/Wallpapers/sakura.jpg
 
 #compositor
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
