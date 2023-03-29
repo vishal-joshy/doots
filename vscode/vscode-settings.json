@@ -9,9 +9,6 @@
   "workbench.startupEditor": "none",
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
   "vscode-neovim.neovimInitVimPaths.linux": "/home/vishal/.config/nvim/init.lua",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
   // auto save
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 2000,
