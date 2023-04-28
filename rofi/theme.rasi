@@ -1,14 +1,14 @@
 * {
-	bg: #000f14;
-	fg: #a0a0b4;
-	selbg: #0a191e;
-	selfg: #a0a0b4;
+	bg: #1a1b26;
+	fg: #a9b1d6;
+	selbg: #24283b;
+	selfg: #9aa5ce;
 
 	background-color: @bg;
 	border-color: @selbg;
 	text-color: @fg;
 	width: 512px;
-	font: "Operator Mono Book 12";
+	font: "Iosevka Extended 12";
 	highlight: bold;
 	blink: false;
 	spacing: 0;
