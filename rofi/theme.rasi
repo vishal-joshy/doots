@@ -1,14 +1,14 @@
 * {
-	bg: #1a1b26;
-	fg: #a9b1d6;
-	selbg: #24283b;
-	selfg: #9aa5ce;
+	bg: #282c34;
+	fg: #D8DEE9;
+	selbg: #D8DEE9;
+	selfg: #2E3440;
 
 	background-color: @bg;
 	border-color: @selbg;
 	text-color: @fg;
 	width: 512px;
-	font: "Iosevka Extended 12";
+	font: "JetBrains Mono Light 12";
 	highlight: bold;
 	blink: false;
 	spacing: 0;
