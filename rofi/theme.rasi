@@ -8,7 +8,7 @@
 	border-color: @selbg;
 	text-color: @fg;
 	width: 512px;
-	font: "JetBrains Mono Light 12";
+	font: "JetBrains Mono 11";
 	highlight: bold;
 	blink: false;
 	spacing: 0;
