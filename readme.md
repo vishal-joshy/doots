@@ -3,7 +3,7 @@ Deps
 
 wm
 ---
-sudo dnf install -y i3 dunst picom rofi i3blocks nm-applet pavucontorl feh thunar
+sudo dnf install -y i3 dunst picom rofi i3blocks network-manager-applet pavucontrol feh thunar
 
 https://www.quad9.net
 
@@ -35,6 +35,7 @@ sudo dnf install -y make gcc fzf thefuck
 
 others
 ---
+sudo dnf install bat
 sudo dnf install mpv task timew syncthing
 
 lazygit
