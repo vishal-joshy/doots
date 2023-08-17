@@ -3,13 +3,11 @@ Deps
 
 wm
 ---
-sudo dnf install -y i3 dunst picom rofi i3blocks network-manager-applet pavucontrol feh thunar
-
 https://www.quad9.net
 
 https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/
 
-sudo dnf install -y hyprland-nvidia waybar-hyprland swaybg dunst thunar pipewire wireplumber qt5-qtwayland qt6-qtwayland
+sudo dnf install -y hyprland waybar-hyprland swaybg dunst thunar pipewire wireplumber qt5-qtwayland qt6-qtwayland
 
 https://wiki.hyprland.org/Useful-Utilities/Must-have/
 

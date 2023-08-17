@@ -1,9 +1,9 @@
 @define-color base00 #181818;
-@define-color base01 #2e3440;
-@define-color base02 #3b3e47;
+@define-color base01 #161821;
+@define-color base02 #1e2132;
 @define-color base03 #585858;
-@define-color base04 #a9b1d6;
-@define-color base05 #d8d8d8;
+@define-color base04 #c6c8d1;
+@define-color base05 #c6c8d1;
 @define-color base06 #e8e8e8;
 @define-color base07 #f8f8f8;
 @define-color base08 #ab4642;
@@ -13,7 +13,7 @@
 @define-color base0C #86c1b9;
 @define-color base0D #7cafc2;
 @define-color base0E #ba8baf;
-@define-color base0F #a16946;
+@define-color base0F #e27878;
 
 * {
     transition: none;
@@ -43,7 +43,7 @@
 
 #workspaces button.active {
     border-radius: 4px;
-    background-color: @base02;
+    background-color: #6b7089;
 }
 
 #workspaces button.urgent {

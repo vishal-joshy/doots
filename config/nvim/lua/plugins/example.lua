@@ -9,13 +9,14 @@
 -- * override the configuration of LazyVim plugins
 return {
   {
-    "oxfist/night-owl.nvim",
+    "cocopon/iceberg.vim",
+    -- "oxfist/night-owl.nvim",
     -- "joshdick/onedark.vim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      vim.cmd.colorscheme("night-owl")
+      vim.cmd.colorscheme("iceberg")
       -- vim.cmd.colorscheme("onedark")
     end,
   },

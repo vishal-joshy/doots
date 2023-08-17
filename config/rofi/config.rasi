@@ -1,8 +1,8 @@
 configuration {
-	modi: "run,drun";
+	modi: "run,drun,window";
 	display-run: "Run";
 	display-drun: "Apps";
 	sidebar-mode: true;
 }
 
-@theme  "theme"
+@theme	"theme"	
