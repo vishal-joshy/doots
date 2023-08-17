@@ -7,28 +7,31 @@ https://www.quad9.net
 
 https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/
 
-sudo dnf install -y hyprland waybar-hyprland swaybg dunst thunar pipewire wireplumber qt5-qtwayland qt6-qtwayland
+sudo dnf install -y hyprland waybar-hyprland azote swaybg dunst pipewire wireplumber qt5-qtwayland qt6-qtwayland swaylock
 
 https://wiki.hyprland.org/Useful-Utilities/Must-have/
 
 term
 ---
-sudo dnf install -y kitty zsh neovim ranger
+sudo dnf install -y kitty foot zsh
 
 sudo lchsh $USER #switch shell
 
-https://starship.rs/guide
+https://github.com/cocopon/iceberg.vim
 
 https://github.com/JetBrains/JetBrainsMono/releases
 
+https://www.nerdfonts.com/font-downloads # download symbols
+
 https://ohmyz.sh/#install
 
-https://www.nerdfonts.com/font-downloads # download symbols
+https://starship.rs/guide
 
 https://github.com/zdharma-continuum/fast-syntax-highlighting
 
 https://github.com/zsh-users/zsh-autosuggestions
 
+sudo dnf install neovim
 sudo dnf install -y make gcc fzf thefuck
 
 others
@@ -36,16 +39,19 @@ others
 sudo dnf install bat
 sudo dnf install mpv task timew syncthing
 
-lazygit
+Browser
+---
+flatpak install firefox ffmpeg-full
+firefox - flatseal - x11-off, fallback x11 - on 
+https://ublockorigin.com/
+
+# DEV
+---
+git
 ---
 sudo dnf copr enable atim/lazygit -y
 
-sudo dnf install lazygit
-
-
-flatpak
----
-flatpak install firefox qbittorrent calibre foliate flatseal ffmpeg-full
+sudo dnf install git lazygit
 
 docker
 ---
@@ -58,4 +64,9 @@ https://github.com/jesseduffield/lazydocker#installation
 Node
 ---
 https://github.com/Schniz/fnm
+
+Editors
+---
+https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
+https://www.jetbrains.com/toolbox-app/
 
