@@ -44,12 +44,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git 
-  fast-syntax-highlighting 
+  git
+  fast-syntax-highlighting
   zsh-autosuggestions
-  # zsh-autocomplete 
-  taskwarrior
-)
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,13 +73,23 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# Aliases
+alias lzg="lazygit"
+alias lzd="lazydocker"
 alias cat="bat"
-alias inbox="./polygon/cpp/a.out"
+alias spotify="flatpak run com.spotify.Client &>/dev/null"
+alias dbeaver="flatpak run io.dbeaver.DBeaverCommunity &>/dev/null"
+alias slack="flatpak run com.slack.Slack &>/dev/null"
+alias postman="flatpak run com.getpostman.Postman &>/dev/null"
 
-# thefuck
-eval $(thefuck --alias ff)
+# bin
+export PATH="/home/vishal/.local/bin:$PATH"
+export PATH="/home/vishal/Bin:$PATH"
 
+# fnm
+export PATH="/home/vishal/.local/share/fnm:$PATH"
+eval "`fnm env`"
 
-# Starship prompt
+# Starship Prompt
 eval "$(starship init zsh)"
+
