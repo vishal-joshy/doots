@@ -15,3 +15,8 @@ alias firefox="flatpak run org.mozilla.firefox"
 
 # starship prompt
 eval "$(starship init zsh)"
+
+
+#Plugins
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
