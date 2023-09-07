@@ -1,14 +1,14 @@
 * {
-	bg: #161821;
+	bg: #1e2132;
 	fg: #c6c8d1;
-	selbg: #6b7089;
-	selfg: #d2d4de;
+	selbg: #a093c7;
+	selfg: #161821;
 
 	background-color: @bg;
-	border-color: @selbg;
+	border-color: #161821;
 	text-color: @fg;
 	width: 512px;
-	font: "JetBrains Mono 11 ";
+	font: "JetBrains Mono 11";
 	highlight: bold;
 	blink: false;
 	spacing: 0;
@@ -24,8 +24,8 @@ configuration{
 }
 
 listview {
-	lines: 5;
-	columns: 2;
+	lines: 6;
+	columns: 1;
 }
 
 element selected,
