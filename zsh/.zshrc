@@ -20,14 +20,11 @@ alias open='xdg-open'
 alias fzd='cd ~ && cd $(find * -type d | fzf)'
 alias fd='cd $(find * -type d | fzf)'
 alias nlog='nvim ~/Logs/log.md'
+alias task='nvim ~/Logs/tasks.md'
 
 # Imports
 export PATH=/home/$USER/.local/bin:$PATH
 export PATH=/home/$USER/Bin:$PATH
-
-# fnm
-# export PATH="/home/work/.local/share/fnm:$PATH"
-# eval "`fnm env`"
 
 # starship prompt
 eval "$(starship init zsh)"
@@ -37,3 +34,7 @@ eval "$(starship init zsh)"
 # source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+# fnm
+export PATH="/home/vishal/.local/share/fnm:$PATH"
+eval "`fnm env`"

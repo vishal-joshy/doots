@@ -23,7 +23,7 @@
 }
 
 #waybar {
-    font-family: 'Jetbrains Mono';
+    font-family: 'CommitMono';
     color: @base0C;
     background: @basebg;
 }
@@ -96,5 +96,5 @@
 }
 
 #window {
-    font-family: "JetBrains Mono";
+    font-family: "CommitMono";
 }
