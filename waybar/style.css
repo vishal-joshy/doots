@@ -1,0 +1,92 @@
+@define-color bg #121212;
+@define-color fg #f5f5f5;
+@define-color green #1DB954;
+@define-color yellow #F2B202;
+@define-color red #CC0101;
+@define-color blue #087284;
+@define-color black #080808;
+@define-color ct1 #363636;
+@define-color ct2 #888888;
+@define-color ct3 #CCCCCC;
+
+* {
+    transition: none;
+    box-shadow: none;
+}
+
+#waybar {
+    font-family: 'Josefin Sans';
+    color: @fg;
+    background: @bg;
+}
+
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    margin: 4px 0;
+    padding: 0 2px;
+    color: @fg;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+    border-radius: 1px;
+    background-color: @ct1;
+    color: @fg;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @fg;
+}
+
+#tray {
+    margin: 4px 4px 4px 4px;
+    border-radius: 4px;
+    background-color: @bg;
+}
+
+#tray * {
+    padding: 0 6px;
+    border-left: 1px solid @green;
+}
+
+#tray *:first-child {
+    border-left: none;
+}
+
+#mode, #cpu, #memory, #network, #pulseaudio, #clock, #temperature {
+    margin: 4px 2px;
+    padding: 0 6px;
+    background-color: @bg;
+    color: @fg;
+    border-radius: 4px;
+    min-width: 20px;
+}
+
+#pulseaudio.muted {
+    color: @base08;
+}
+
+#pulseaudio.bluetooth {
+    color: @base06;
+}
+
+#clock {
+    margin-left: 0px;
+    margin-right: 4px;
+    background-color: transparent;
+}
+
+#temperature.critical {
+    color: @fg;
+    background-color: @red;
+}
+
+#window {
+    font-family: "Josefin Sans";
+}
