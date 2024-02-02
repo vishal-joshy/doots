@@ -1,21 +1,15 @@
 {
-    "layer": "bottom", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    // "width": 1280, // Waybar width 
+    "layer": "bottom",
+    "position": "top", 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "cpu", "memory", "temperature", "clock", "tray"],
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
-    // Modules configuration
+    "spacing": 4, 
+
      "hyprland/workspaces": {
          "disable-scroll": true,
          "on-click": "activate",
-         // "all-outputs": false,
-         // "format": "{icon}",
          "format": "{name}",
-        // "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
-        // "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
          "format-icons": {
              "urgent": "",
              "focused": "",
@@ -64,7 +58,6 @@
         "spacing": 0
     },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -84,7 +77,6 @@
         "format-icons": ["", "", ""]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
@@ -110,5 +102,5 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
+    }
 }
