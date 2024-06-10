@@ -1,9 +1,13 @@
 [user]
 	name = vishal-joshy
-	email = 1812-vishal@protonmail.com
+	email = 83570027+vishal-joshy@users.noreply.github.com
 [init]
 	defaultBranch = main
 [color]
 	ui = auto
 [pull]
 	rebase = false
+[core]
+	excludesfile = /Users/vishal/.gitignore_global
+[url "ssh://git@github.com/ChistaDATA/"]
+    insteadOf = https://github.com/ChistaDATA/
