@@ -1,0 +1,35 @@
+
+alias dnfI='sudo dnf install'
+alias dnfX='sudo dnf remove'
+alias dnfU='sudo dnf update'
+alias dnfc='sudo dnf check-update'
+alias dnfs='sudo dnf search'
+alias dnfl='sudo dnf list'
+alias dnfi='sudo dnf info'
+alias dnfC='sudo dnf clean all'
+
+alias cat='bat'
+
+function cd(){
+  builtin cd "$@" && ls
+}
+
+function open () {
+  xdg-open "$@">/dev/null 2>&1
+}
+
+function fo(){
+  if [[ -z "$1" ]]; then
+    open "$(fd | fzf)"
+  else
+    $1 "$(fd | fzf)"
+  fi
+}
+
+function fcd(){
+  cd "$(fd -t directory | fzf \
+    --preview='echo "File(s) with index(es) {+n} and query {q} \n" && ls -l {-1}' \
+    --preview-label='[ Directory Stats ]')"
+}
+
+eval "$(starship init zsh)"
