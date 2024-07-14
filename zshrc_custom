@@ -8,7 +8,17 @@ alias dnfl='sudo dnf list'
 alias dnfi='sudo dnf info'
 alias dnfC='sudo dnf clean all'
 
+alias flatpakI='flatpak install'
+alias flatpaks='flatpak search'
+alias flatpakX='flatpak uninstall'
+alias flatpakU='flatpak update'
+alias flatpakR='flatpak run'
+alias flatpakl='flatpak list'
+
 alias cat='bat'
+alias lzg='lazygit'
+alias lzd='lazydocker'
+alias lzn='lazynpm'
 
 function cd(){
   builtin cd "$@" && ls
@@ -31,5 +41,18 @@ function fcd(){
     --preview='echo "File(s) with index(es) {+n} and query {q} \n" && ls -l {-1}' \
     --preview-label='[ Directory Stats ]')"
 }
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$HOME/.local/bin/:$PATH
+
+
+# fnm
+FNM_PATH="/home/vishal/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/vishal/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
 
 eval "$(starship init zsh)"
