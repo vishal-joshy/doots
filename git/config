@@ -9,5 +9,3 @@
 	rebase = false
 [core]
 	excludesfile = /Users/vishal/.gitignore_global
-[url "ssh://git@github.com/ChistaDATA/"]
-    insteadOf = https://github.com/ChistaDATA/

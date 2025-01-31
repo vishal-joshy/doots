@@ -1,0 +1,5 @@
+theme=terafox
+adjust-cell-height=8
+gtk-titlebar=false
+adjust-underline-position=4
+window-padding-x=4

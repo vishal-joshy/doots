@@ -1,28 +1,6 @@
-
-alias dnfI='sudo dnf install'
-alias dnfX='sudo dnf remove'
-alias dnfU='sudo dnf update'
-alias dnfc='sudo dnf check-update'
-alias dnfs='sudo dnf search'
-alias dnfl='sudo dnf list'
-alias dnfi='sudo dnf info'
-alias dnfC='sudo dnf clean all'
-
-alias flatpakI='flatpak install'
-alias flatpaks='flatpak search'
-alias flatpakX='flatpak uninstall'
-alias flatpakU='flatpak update'
-alias flatpakR='flatpak run'
-alias flatpakl='flatpak list'
-
-alias cat='bat'
+alias vi='nvim'
 alias lzg='lazygit'
 alias lzd='lazydocker'
-alias lzn='lazynpm'
-
-function cd(){
-  builtin cd "$@" && ls
-}
 
 function open () {
   xdg-open "$@">/dev/null 2>&1
@@ -46,13 +24,3 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$HOME/.local/bin/:$PATH
 
-
-# fnm
-FNM_PATH="/home/vishal/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/vishal/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
-
-
-eval "$(starship init zsh)"
