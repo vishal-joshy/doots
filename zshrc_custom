@@ -15,6 +15,7 @@ function fo(){
 }
 
 function fcd(){
+  cd &&
   cd "$(fd -t directory | fzf \
     --preview='echo "File(s) with index(es) {+n} and query {q} \n" && ls -l {-1}' \
     --preview-label='[ Directory Stats ]')"
@@ -22,5 +23,5 @@ function fcd(){
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$HOME/.local/bin/:$PATH
 
+set -o vi

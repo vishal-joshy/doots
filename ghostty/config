@@ -1,5 +1,7 @@
 theme=terafox
 adjust-cell-height=8
 gtk-titlebar=false
-adjust-underline-position=4
+adjust-underline-position=2
 window-padding-x=4
+font-family=JetBrains Mono
+font-family=13
