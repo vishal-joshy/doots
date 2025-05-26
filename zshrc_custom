@@ -1,27 +1,12 @@
 alias vi='nvim'
 alias lzg='lazygit'
-alias lzd='lazydocker'
+alias cat='bat'
 
-function open () {
-  xdg-open "$@">/dev/null 2>&1
-}
-
-function fo(){
-  if [[ -z "$1" ]]; then
-    open "$(fd | fzf)"
-  else
-    $1 "$(fd | fzf)"
+fcd(){
+  local dir 
+  dir=$(fd --type d --hidden --exclude .git . |
+    fzf --preview 'ls -ls {}' --height 40% --reverse --prompt="Select directory: ")
+  if [[ -n "$dir" ]]; then
+    builtin cd "$dir"
   fi
 }
-
-function fcd(){
-  cd &&
-  cd "$(fd -t directory | fzf \
-    --preview='echo "File(s) with index(es) {+n} and query {q} \n" && ls -l {-1}' \
-    --preview-label='[ Directory Stats ]')"
-}
-
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(go env GOPATH)/bin
-
-set -o vi
